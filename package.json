@@ -32,7 +32,10 @@
     "url": ""
   },
   "homepage": "",
-  "dependencies": {},
+  "dependencies": {
+    "empxrem": "0.0.4",
+    "musical-ratios": "0.0.4"
+  },
   "devDependencies": {
     "@almaclaine/rollup-config": "^0.0.2",
     "@almaclaine/ts-config": "^0.0.1",
