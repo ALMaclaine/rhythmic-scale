@@ -35,8 +35,8 @@
   },
   "homepage": "https://github.com/ALMaclaine/rhythmic-scale/",
   "dependencies": {
-    "empxrem": "0.0.9",
-    "musical-ratios": "0.0.6"
+    "empxrem": "^0.0.11",
+    "musical-ratios": "^0.0.7"
   },
   "devDependencies": {
     "@almaclaine/eslint-config": "^0.0.17",
