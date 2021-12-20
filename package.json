@@ -1,6 +1,6 @@
 {
   "name": "rhythmic-scale",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A utility library for building modular scale systems.",
   "main": "dist/index.bundle.js",
   "module": "dist/index.js",
@@ -35,8 +35,8 @@
   },
   "homepage": "https://github.com/ALMaclaine/rhythmic-scale/",
   "dependencies": {
-    "empxrem": "^0.0.11",
-    "musical-ratios": "^0.0.7"
+    "empxrem": "^0.0.12",
+    "musical-ratios": "^0.0.8"
   },
   "devDependencies": {
     "@almaclaine/eslint-config": "^0.0.18",

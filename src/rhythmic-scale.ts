@@ -13,22 +13,22 @@ function scaledSize(ratio: MusicalRatios | number, level: number, size = 1) {
 }
 
 export class RhythmicScale {
-     public baseFont: number;
-     public baseBrowserFontSize: number;
-     public lineHeightFactor: number;
+    public baseFont: number;
+    public baseBrowserFontSize: number;
+    public lineHeightFactor: number;
 
-     constructor(params: RhythmicScaleParams = {}) {
-         const { baseFont, baseBrowserFontSize, lineHeightFactor } = { ...rhythmicScaleDefaultParams, ...params };
-         this.baseFont = baseFont;
-         this.baseBrowserFontSize = baseBrowserFontSize;
-         this.lineHeightFactor = lineHeightFactor;
-     }
+    constructor(params: RhythmicScaleParams = {}) {
+        const { baseFont, baseBrowserFontSize, lineHeightFactor } = { ...rhythmicScaleDefaultParams, ...params };
+        this.baseFont = baseFont;
+        this.baseBrowserFontSize = baseBrowserFontSize;
+        this.lineHeightFactor = lineHeightFactor;
+    }
 
-     scaledStyles(ratio: MusicalRatios | number, level: number): {lineHeight: string, size: string} {
-         const scaled = scaledSize(ratio, level, this.baseFont);
-         return {
-             size: ensureNotPxRem(scaled, this.baseBrowserFontSize),
-             lineHeight: ensureNotPxRem(scaled * this.lineHeightFactor, this.baseBrowserFontSize),
-         };
-     }
+    scaledStyles(ratio: MusicalRatios | number, level: number): {lineHeight: string, size: string} {
+        const scaled = scaledSize(ratio, level, this.baseFont);
+        return {
+            size: ensureNotPxRem(scaled, this.baseBrowserFontSize),
+            lineHeight: ensureNotPxRem(scaled * this.lineHeightFactor, this.baseBrowserFontSize),
+        };
+    }
 }
